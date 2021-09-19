@@ -10,6 +10,7 @@ import {
 import data from "./Cards.json";
 import Images from "./Images.js";
 function EffectParser(effect) {
+  //console.log(effect);
   //Return nothing if effect is empty
   if (effect.includes("N/A")) {
     return;
@@ -21,16 +22,57 @@ function EffectParser(effect) {
     var cardTypeYellowImageTag = <img src={'/images/Card_Yellow.png'} alt={'Card_Yellow.png'} width={64} height={64}></img>;
     var cardTypeRedImageTag = <img src={'/images/Card_Red.png'} alt={'Card_Red.png'} width={64} height={64}></img>;
     var cardTypeGreenImageTag = <img src={'/images/Card_Green.png'} alt={'Card_Green.png'} width={64} height={64}></img>;
-    var imageName = effect.substring(0, effect.indexOf(".png ") + 4).replace(" ", "_");
+    var imageName = effect.substring(0, effect.indexOf(".png ") + 4).replace(/ /g, "_");
     var requirementImagesTag = [];
-    var requirementsText = cardEffectText.substring(cardEffectText.indexOf(":"));
-    var requirementsSplit = requirementsText.split("1");
+
+    //Check if the effect has an S in requirement(s): due to inconsistency in JSON
+    var requirementsText = cardEffectText.includes("Requirements:") ? cardEffectText.substring(cardEffectText.indexOf("Requirements:")) : cardEffectText.substring(cardEffectText.indexOf("Requirement:"));
+    var requirementsSplit = cardEffectText.includes("Requirements:") ? requirementsText.split("Requirements:") : requirementsText.split("Requirement:");
+    cardEffectText = cardEffectText.includes("Requirements:") ? cardEffectText.substring(0,cardEffectText.indexOf("Requirements:")+"Requirements:".length) : cardEffectText.substring(0,cardEffectText.indexOf("Requirement:")+"Requirement:".length);
+    console.log(requirementsText);
+    
+    if (requirementsSplit.length > 1) {
+      requirementsSplit = requirementsSplit[1].split("1");
+      requirementsSplit = requirementsSplit.filter(element => element !== '' && element !== ' ');
+      console.log(requirementsSplit);
+    }
+    console.log(imageName);
     imageTag = <img src={'/images/' + imageName} alt={imageName} width={64} height={64}></img>;
 
-    if (requirementsText.includes("mug.png")) {
-      requirementImagesTag.push()
-    }
+    requirementsSplit.forEach(element => {
+      if (element.toLowerCase().includes("mug.png")) {
+        var mugFileName = element.substring(0, element.toLowerCase().indexOf("mug.png") + 7).replace(/ /g, "_");
+        console.log(mugFileName);
+        requirementImagesTag.push(
+          <img src={'/images/' + mugFileName} alt={mugFileName} width={64} height={64}></img>
+        )
+      }
+      else
+        if (element.includes("Yellow")) {
+          requirementImagesTag.push(cardTypeYellowImageTag);
+        }
+        else if (element.includes("Blue")) {
+          requirementImagesTag.push(cardTypeBlueImageTag);
+        }
+        else if (element.includes("Green")) {
+          requirementImagesTag.push(cardTypeGreenImageTag);
+        }
+        else if (element.includes("Red")) {
+          requirementImagesTag.push(cardTypeRedImageTag);
+        }
 
+    });
+
+    return (
+      <tr>
+        <td>
+          {imageTag}
+          </td>
+        <td>{cardEffectText}
+        {requirementImagesTag}
+        </td>
+      </tr>
+    );
 
   }
 
@@ -43,16 +85,22 @@ function App() {
     //console.log(Images);
     //<img src={require('./images/'+d.CardImage.replace(/\ /g,"_"))} alt={d.CardImage}></img>
     //if(d.Attack > 10)
-    if (d.Effect1.search("Yellow") > 0 || d.Effect2.search("Yellow") > 0) {
-      var filepath = '/images/' + d.CardImage.replace(/\ /g, "_");
-      console.log(filepath);
+    if ((d.Effect1.search(" ") >= 0 || d.Effect2.search(" ") >= 0) /*&& d.Colour.includes("Yellow")*/) {
+      var filepath = '/images/' + d.CardImage.replace(/ /g, "_");
+      //console.log(filepath);
+      //console.log("outside function:"+ d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_"));
+      //console.log("outside function:"+d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4).replace(/ /g, "_"));
       return (
         <table>
           <tbody>
-            <tr key={d.ID}>
+            <tr key={d.ID}>{d.ID}
               <td className="cardImage">
                 <div className="clear"></div>
-                <img src={filepath} alt={d.CardImage} width={256} height={256}></img>
+
+                <img src={filepath} alt={d.CardImage.replace(/ /g, "_")} className="cardImage" width={256} height={256}>
+                </img>
+                <img src={'/images/Card_' + d.Colour + ".png"} alt={d.Colour} className="cardColour" width={56} height={56}></img>
+
                 <div className="clear"></div>
               </td>
               <td className="cardData">
@@ -62,8 +110,11 @@ function App() {
                 </div>
                 <table>
                   <tbody>
-                    {d.Effect1.includes(".png") ? <tr><td><img src={'/images/' + d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(" ", "_")} alt={d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4)} width={64} height={64}></img></td><td>{d.Effect1.substring(d.Effect1.indexOf(".png ") + 4)}</td></tr> : <tr>{d.Effect1}</tr>}
-                    {d.Effect2.includes(".png") ? <tr><td><img src={'/images/' + d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4).replace(" ", "_")} alt={d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4)} width={64} height={64} ></img></td><td>{d.Effect2.substring(d.Effect2.indexOf(".png ") + 4)}</td></tr> : <tr>{d.Effect2}</tr>}
+                    {/* {d.Effect1.includes(".png") ? <tr><td><img src={'/images/' + d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_")} alt={d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_")} width={64} height={64}></img></td><td>{d.Effect1.substring(d.Effect1.indexOf(".png ") + 4)}</td></tr> : <tr>{d.Effect1}</tr>}
+                    {d.Effect2.includes(".png") ? <tr><td><img src={'/images/' + d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4).replace(/ /g, "_")} alt={d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4).replace(/ /g, "_")} width={64} height={64} ></img></td><td>{d.Effect2.substring(d.Effect2.indexOf(".png ") + 4)}</td></tr> : <tr>{d.Effect2}</tr>} */}
+                    {EffectParser(d.Effect1)}
+                    {EffectParser(d.Effect2)}
+
                   </tbody>
                 </table>
               </td>
