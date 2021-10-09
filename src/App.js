@@ -85,7 +85,7 @@ function App() {
     //console.log(Images);
     //<img src={require('./images/'+d.CardImage.replace(/\ /g,"_"))} alt={d.CardImage}></img>
     //if(d.Attack > 10)
-    if ((d.Effect1.search(" ") >= 0 || d.Effect2.search(" ") >= 0) /*&& d.Colour.includes("Yellow")*/) {
+    if ((d.Effect1.toLocaleLowerCase().includes("ampli") > 0 || d.Effect2.toLocaleLowerCase().includes("ampli") > 0) /*&& d.Colour.includes("Blue")*/) {
       var filepath = '/images/' + d.CardImage.replace(/ /g, "_");
       //console.log(filepath);
       //console.log("outside function:"+ d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_"));
@@ -93,8 +93,8 @@ function App() {
       return (
         <table>
           <tbody>
-            <tr key={d.ID}>{d.ID}
-              <td className="cardImage">
+            <tr key={d.ID}>
+              <td className="cardImageBox" >
                 <div className="clear"></div>
 
                 <img src={filepath} alt={d.CardImage.replace(/ /g, "_")} className="cardImage" width={256} height={256}>

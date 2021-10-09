@@ -15,9 +15,3 @@ table, th, td ,tr{
   border: 1px solid black;
 }
 
-#cardColour{
-  position: absolute;
-    top: 0;
-    display: block;
-    opacity: 0.1;
-}
