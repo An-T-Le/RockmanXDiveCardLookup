@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import SearchTools from './SearchTools';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,7 +23,7 @@ function EffectParser(effect) {
     var cardTypeYellowImageTag = <img src={'/images/Card_Yellow.png'} alt={'Card_Yellow.png'} width={64} height={64}></img>;
     var cardTypeRedImageTag = <img src={'/images/Card_Red.png'} alt={'Card_Red.png'} width={64} height={64}></img>;
     var cardTypeGreenImageTag = <img src={'/images/Card_Green.png'} alt={'Card_Green.png'} width={64} height={64}></img>;
-    var imageName = effect.substring(0, effect.indexOf(".png ") + 4).replace(/ /g, "_");
+    var imageName = effect.substring(0, effect.indexOf(".png ") + 4).replace(/ /g, "_").replace(/\(/g,"%40").replace(/\)/g,"%41");
     var requirementImagesTag = [];
 
     //Check if the effect has an S in requirement(s): due to inconsistency in JSON
@@ -41,7 +42,7 @@ function EffectParser(effect) {
 
     requirementsSplit.forEach(element => {
       if (element.toLowerCase().includes("mug.png")) {
-        var mugFileName = element.substring(0, element.toLowerCase().indexOf("mug.png") + 7).replace(/ /g, "_");
+        var mugFileName = element.substring(0, element.toLowerCase().indexOf("mug.png") + 7).replace(/ /g, "_").replace(/\(/g,"%40").replace(/\)/g,"%41");
         console.log(mugFileName);
         requirementImagesTag.push(
           <img src={'/images/' + mugFileName} alt={mugFileName} width={64} height={64}></img>
@@ -77,15 +78,17 @@ function EffectParser(effect) {
   }
 
 }
+
 function App() {
   const jsonData = require('./Cards.json');
+  const [searchTerm, setSearchTerm] = useState("");
 
   //const data = [{"name":"test1"},{"name":"test2"}];
   const listItems = data.map((d) => {
     //console.log(Images);
     //<img src={require('./images/'+d.CardImage.replace(/\ /g,"_"))} alt={d.CardImage}></img>
     //if(d.Attack > 10)
-    if ((d.Effect1.toLocaleLowerCase().includes("ampli") > 0 || d.Effect2.toLocaleLowerCase().includes("ampli") > 0) /*&& d.Colour.includes("Blue")*/) {
+    if ((d.Effect1.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0 || d.Effect2.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0) /*&& d.Colour.includes("Blue")*/) {
       var filepath = '/images/' + d.CardImage.replace(/ /g, "_");
       //console.log(filepath);
       //console.log("outside function:"+ d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_"));
@@ -131,6 +134,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <SearchTools searchTerm={searchTerm} setSearchTerm = {setSearchTerm}/>
         <table className="SearchResults">
           <tbody>
             {listItems}

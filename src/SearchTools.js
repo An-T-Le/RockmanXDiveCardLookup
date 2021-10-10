@@ -1,15 +1,29 @@
-import React, {useState} from 'react';
-function SearchTools()
-{
-const [searchTerm, setSearchTerm] = useState(0);
+import React, { useState, useEffect } from 'react';
 
-return(<div>
-    <form>
-    <label>Search
-    <input type="text" name="searchTermInput"/>
-    </label>
-    <input type="submit" value="Submit"/>
-    </form>
-</div>);
+
+// function onHandleChange(event,props)
+// {
+//     props.setSearchTerm(event.target.value);
+// }
+
+function SearchTools(props)
+{
+    const [searchTerm,setSearchTerm] = useState("");
+    
+
+
+    return (<div>
+        <form onSubmit={(event) =>{
+            event.preventDefault();
+            props.setSearchTerm(searchTerm);
+        }}>
+            <label>Search</label>
+            <div />
+            <input type="text" name="searchTermInput" onChange={(event) => { setSearchTerm (event.target.value) }} />
+
+        </form>
+    </div>);
 }
+
 export default SearchTools;
+//
