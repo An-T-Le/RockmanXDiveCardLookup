@@ -88,7 +88,7 @@ function App() {
     //console.log(Images);
     //<img src={require('./images/'+d.CardImage.replace(/\ /g,"_"))} alt={d.CardImage}></img>
     //if(d.Attack > 10)
-    if ((d.Effect1.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0 || d.Effect2.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0) /*&& d.Colour.includes("Blue")*/) {
+    if ((d.Name.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0 || d.Effect1.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0 || d.Effect2.toLocaleLowerCase().includes(searchTerm.toString().toLocaleLowerCase()) > 0) /*&& d.Colour.includes("Blue")*/) {
       var filepath = '/images/' + d.CardImage.replace(/ /g, "_");
       //console.log(filepath);
       //console.log("outside function:"+ d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_"));
