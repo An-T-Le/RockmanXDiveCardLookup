@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useCallback } from 'react';
 import SearchTools from './SearchTools';
+import FilterTools from './FilterTools';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom';
-import data from "./Cards.json";
+import data from "./Utility_Scripts/Cards.json";
 import Images from "./Images.js";
+
 function EffectParser(effect) {
   //console.log(effect);
   //Return nothing if effect is empty
@@ -83,6 +85,12 @@ function App() {
   const jsonData = require('./Cards.json');
   const [searchTerm, setSearchTerm] = useState("");
 
+  const [blueCardsEnabled, setBlueCardsState] = useState(true);
+  const [yellowCardsEnabled, setYellowCardsState] = useState(true);
+  const [redCardsEnabled, setRedCardsState] = useState(true);
+  const [greenCardsEnabled, setGreenCardsState] = useState(true);
+  
+
   //const data = [{"name":"test1"},{"name":"test2"}];
   const listItems = data.map((d) => {
     //console.log(Images);
@@ -113,8 +121,6 @@ function App() {
                 </div>
                 <table>
                   <tbody>
-                    {/* {d.Effect1.includes(".png") ? <tr><td><img src={'/images/' + d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_")} alt={d.Effect1.substring(0, d.Effect1.indexOf(".png ") + 4).replace(/ /g, "_")} width={64} height={64}></img></td><td>{d.Effect1.substring(d.Effect1.indexOf(".png ") + 4)}</td></tr> : <tr>{d.Effect1}</tr>}
-                    {d.Effect2.includes(".png") ? <tr><td><img src={'/images/' + d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4).replace(/ /g, "_")} alt={d.Effect2.substring(0, d.Effect2.indexOf(".png ") + 4).replace(/ /g, "_")} width={64} height={64} ></img></td><td>{d.Effect2.substring(d.Effect2.indexOf(".png ") + 4)}</td></tr> : <tr>{d.Effect2}</tr>} */}
                     {EffectParser(d.Effect1)}
                     {EffectParser(d.Effect2)}
 
@@ -135,6 +141,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <SearchTools searchTerm={searchTerm} setSearchTerm = {setSearchTerm}/>
+        <FilterTools blueCardsEnabled={blueCardsEnabled} setBlueCardsState={setBlueCardsState} yellowCardsEnabled={yellowCardsEnabled} setYellowCardsState={setYellowCardsState} redCardsEnabled={redCardsEnabled} setRedCardsState={setRedCardsState} greenCardsEnabled={greenCardsEnabled} setGreenCardsState={setGreenCardsState}/>
         <table className="SearchResults">
           <tbody>
             {listItems}

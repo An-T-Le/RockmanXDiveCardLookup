@@ -34,11 +34,15 @@ function parseWikiaToJSON(input)
     output = output.replace(/'/g,"");
     output = output.replace(/\|-/g,"");
     output = output.replace(/\|<br>/g,"");
+    output = output.replace(/<br> /g,"");
     output = output.replace(/<br>/g,"");
     output = output.replace(/[\n]/g,"|");
     output = output.replace(/\|frameless\|30x30px]]/g,"");
     output = output.replace(/\|frameless\|40x40px]]/g,"");
+    //output = output.replace(/\|frameless\|50x50px]]/g,"");
+    console.log(output);
     output = output.replace(/\|frameless\|50x50px]]\|/g," ");
+    //output = output.replace(/\|frameless\|50x50px]] /g,"");
     output = output.replace(/\|\[\[File:/g,"");
     output = output.replace(/\[\[File:/g," ");
     output = output.replace(/\|\|\|/g,"|");
@@ -54,7 +58,7 @@ function parseWikiaToJSON(input)
     output = output.replace(/\*HP:/g,"");
     output = output.replace(/\*DEF:/g,"");
     output = output.replace(/\|Requirement/g," Requirement");
-    console.log(output);
+    //console.log(output);
     //output = output.replace(/\[\[(.*?)\]\]/g,"");
     var split = output.split("|");
     //console.log(split);
