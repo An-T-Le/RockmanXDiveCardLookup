@@ -199,7 +199,7 @@
     "Attack": "6",
     "HP": "17",
     "Defense": "4",
-    "Effect1": "Preparation_time_passive.png Mobility I:The preparation time of the Charge Shot is reduced by 20%(→30%). When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:X mug.png X",
+    "Effect1": "Preparation_time_passive.png Mobility I:The preparation time of the Charge Shot is reduced by 20%(→30%).(→Not stackable with same card) Requirement:X mug.png X",
     "Effect2": "Immobilize Resistance.png Immobilize Resistance I:20%(→30%) chance to become immune to effects of Immobilize. Requirement:1 Blue1 Red1 Yellow",
     "Rank": "B"
   },
@@ -259,7 +259,7 @@
     "Attack": "7",
     "HP": "18",
     "Defense": "2",
-    "Effect1": "Interference.png Backdoor Program I:When you hit your target with a weapon, there is a chance to cause interference which will cancel new buffs 1 time(increased chance of triggering at 5 star). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Pallette mug.png Pallette",
+    "Effect1": "Interference.png Backdoor Program I:When you hit your target with a weapon, there is a chance to cause interference which will cancel new buffs 1 time(→increased chance of triggering at 5 star). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Pallette mug.png Pallette",
     "Effect2": "Attack_weaken_debuff.png Damage Reduction Special Attack I:When you hit a target in damage reduction status, increase damage you deal by 4%(→6%). Requirement:1 Yellow1 Yellow1 Blue",
     "Rank": "B"
   },
@@ -524,7 +524,7 @@
     "HP": "24",
     "Defense": "5",
     "Effect1": "Speed_buff.png Enhanced Rapid Response I:Increases the chance of Rapid Response triggering by 30%(→50%). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Zero mug.png Zero",
-    "Effect2": "Boss_Killer.png BOSS Killer I:When your target is a boss, increase damage you deal by 4%(→6%). Requirement:1 Red1 Yellow1 Blue",
+    "Effect2": "Boss_Killer.png BOSS Killer I:When your target is a boss , increase damage you deal by 4%(→6%). Requirement:1 Red1 Yellow1 Blue",
     "Rank": "A"
   },
   {
@@ -571,7 +571,7 @@
     "Attack": "9",
     "HP": "21",
     "Defense": "5",
-    "Effect1": "Def_buff.png Show Time I:Reduce damage taken during Tenshouha by half.(At 5*, Will not take any damage when using Tenshouha.) When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Layer mug.png Layer",
+    "Effect1": "Def_buff.png Show Time I:Reduce damage taken during Tenshouha by half.(→At 5*, Will not take any damage when using Tenshouha.) When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Layer mug.png Layer",
     "Effect2": "Summoned_resistance.png Summon Sentinel I:When you are attacked by a summoned enemy, reduce the damage you take by 15%(→20%). Requirement:1 Red1 Yellow1 Yellow",
     "Rank": "A"
   },
@@ -1159,7 +1159,7 @@
     "Attack": "8",
     "HP": "21",
     "Defense": "6",
-    "Effect1": "HP_restore_passive.png Sweeping Time I:When you use Roll Swing or Mopping(any skill at 5*), remove all negative statuses you currently have. Requirement:Roll mug.png Roll",
+    "Effect1": "HP_restore_passive.png Sweeping Time I:When you use Roll Swing or Mopping(→any skill at 5*), remove all negative statuses you currently have. Requirement:Roll mug.png Roll",
     "Effect2": "Player Resistance.png Player Sentinel I:When you are attacked by a player, reduce the damage you take by 4%(→6%). Requirement:1 Green1 Red1 Yellow",
     "Rank": "A"
   },
@@ -1171,7 +1171,7 @@
     "Attack": "7",
     "HP": "27",
     "Defense": "4",
-    "Effect1": "Invincibility_buff.png Show Time I:Will not take any damage when using Supporting Eddie(Extend the duration of invulnerability for 5 stars). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Roll mug.png Roll",
+    "Effect1": "Invincibility_buff.png Show Time I:Will not take any damage when using Supporting Eddie(→Extend the duration of invulnerability for 5 stars). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Roll mug.png Roll",
     "Effect2": "DoT Resistance.png Continuous Damage Resistance I:20%(→30%) chance to become immune to effects of Continuous Damage. Requirement:1 Red1 Green1 Yellow",
     "Rank": "A"
   },
@@ -1243,7 +1243,7 @@
     "Attack": "15",
     "HP": "22",
     "Defense": "6",
-    "Effect1": "Sprayer_mastery_passive.png Open Fire I:Increase damage by 20%(→24%) when equipping a Sprayer. When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Ultimate Armor X (CM) mug.png Ultimate Armor X(CM)",
+    "Effect1": "Sprayer_mastery_passive.png Open Fire I:Increase damage by 20%(→24%) when equipping a Sprayer. When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Ultimate Armor X(→CM) mug.png Ultimate Armor X(→CM)",
     "Effect2": "Machine_gun_mastery_passive.png Machine Gun Amplification II:Increase damage by 6%(→8%) when equipping a machine gun. Requirement:1 Red1 Red1 Yellow",
     "Rank": "S"
   },
@@ -1447,7 +1447,7 @@
     "Attack": "15",
     "HP": "13",
     "Defense": "3",
-    "Effect1": "Damage_buff.png First Strike I:Gain damage enhancement when entering a stage, with damage increased by 12%(→16%)(25 seconds). It can only be triggered once in a battle & when you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:1 Red1 Yellow",
+    "Effect1": "Damage_buff.png First Strike I:Gain damage enhancement when entering a stage, with damage increased by 12%(→16%)(→25 seconds). It can only be triggered once in a battle & when you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:1 Red1 Yellow",
     "Effect2": "N/A",
     "Rank": "A"
   },
@@ -1471,7 +1471,7 @@
     "Attack": "14",
     "HP": "10",
     "Defense": "5",
-    "Effect1": "Preparation_time_passive.png Knuckle Enhancement I:The preparation time of Zero Knuckle is reduced by 20%(At 5*, the attack will gain an additional effect of stealing a random buff when hitting a target.) When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:MMZ Zero Mug.png Zero(Z)",
+    "Effect1": "Preparation_time_passive.png Knuckle Enhancement I:The preparation time of Zero Knuckle is reduced by 20%(→At 5*, the attack will gain an additional effect of stealing a random buff when hitting a target.) When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:MMZ Zero Mug.png Zero(Z)",
     "Effect2": "Seize Weapon.png No Weapon Special Attack I:When you hit a target in no weapon status, increase the damage you deal by 4%(→6%). Requirement:1 Green1 Red1 Red",
     "Rank": "A"
   },
@@ -1495,7 +1495,7 @@
     "Attack": "7",
     "HP": "27",
     "Defense": "9",
-    "Effect1": "Duration_passive.png Enhanced Preventive Shield I:Increase the effective duration of Preventive Shield by 40%.(It cannot be removed at 5 stars). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Ciel mug.png Ciel",
+    "Effect1": "Duration_passive.png Enhanced Preventive Shield I:Increase the effective duration of Preventive Shield by 40%.(→It cannot be removed at 5 stars). When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Ciel mug.png Ciel",
     "Effect2": "Low_health_def_increase_passive.png Crisis Adaptability II:When below 30% HP, reduce damage taken by 8%(→10%). Requirement:1 Red1 Yellow1 Green",
     "Rank": "S"
   },
@@ -1663,7 +1663,7 @@
     "Attack": "11",
     "HP": "27",
     "Defense": "7",
-    "Effect1": "Generic passive.png Complete penetration I:Homing Plasma now penetrates terrains and obstacles(at 5*, the duration of immobilization is extended). When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Pandora Mug.png Pandora",
+    "Effect1": "Generic passive.png Complete penetration I:Homing Plasma now penetrates terrains and obstacles(→at 5*, the duration of immobilization is extended). When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Pandora Mug.png Pandora",
     "Effect2": "Paralysis_debuff.png Immobilize Special Attack II:When you hit a target in immobile status, increase the damage you deal by 6%(→8%) Requirement:1 Green1 Green1 Blue",
     "Rank": "S"
   },
@@ -2227,7 +2227,7 @@
     "Attack": "6",
     "HP": "13",
     "Defense": "5",
-    "Effect1": "Chance to repeat passive.png Quick Restart I:Launch the leave shield and when it hits a target, there is a chance to make the skill available immediately again(triggers 100% at 5-star). This effect can only be triggered once more after a 15-second cooldown and when you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Mega man mug.png Mega Man",
+    "Effect1": "Chance to repeat passive.png Quick Restart I:Launch the leave shield and when it hits a target, there is a chance to make the skill available immediately again(→triggers 100% at 5-star). This effect can only be triggered once more after a 15-second cooldown and when you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Mega man mug.png Mega Man",
     "Effect2": "Slow_debuff.png Slow Special Attack I:When you hit a target in slow status, increase the damage you deal by 4%(→6%) Requirement:1 Green1 Green1 Blue",
     "Rank": "B"
   },
@@ -2263,7 +2263,7 @@
     "Attack": "10",
     "HP": "27",
     "Defense": "8",
-    "Effect1": "HP_restore_passive.png Repair Device I:When summoning Floating Mines, remove a random negative status you have, with a chance to gain an invincible shield(Increased chance of triggering at 5 stars) However, Mines summoned by Auto Defense will not trigger this effect.When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Iris mug.png Iris",
+    "Effect1": "HP_restore_passive.png Repair Device I:When summoning Floating Mines, remove a random negative status you have, with a chance to gain an invincible shield(→Increased chance of triggering at 5 stars) However, Mines summoned by Auto Defense will not trigger this effect.When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Iris mug.png Iris",
     "Effect2": "High health def increase passive.png Homeopathy Adaptability II:When HP is 50% or higher, reduce damage taken by 5%(→6%). Requirement:1 Red1 Red1 Blue",
     "Rank": "S"
   },
@@ -2419,7 +2419,7 @@
     "Attack": "12",
     "HP": "32",
     "Defense": "6",
-    "Effect1": "Boss_Killer.png Kamura Maiden I:When your target is a boss character, increase damage you deal by 4%(→6%). When you are attacked by a boss character, reduce the damage you take by 4%(→6%). Requirement:1 Red1 Yellow",
+    "Effect1": "Boss_Killer.png Kamura Maiden I:When your target is a boss character, increase damage you deal by 4%(→6%). When you are attacked by a boss character, reduce the damage you take by 4%. Requirement:1 Red1 Yellow",
     "Effect2": "HP_restore_passive.png Bunny Dango I:When your HP drops below 50%, recover HP equivalent to 5%(→7%) of your Attack once every 6 seconds. Requirement:1 Red1 Yellow1 Yellow",
     "Rank": "S"
   },
@@ -2479,7 +2479,7 @@
     "Attack": "11",
     "HP": "26",
     "Defense": "8",
-    "Effect1": "HP_restore_passive.png Hyper Chip Enhancement I:When you activate Hyper Chip, remove all negative status you currently have(at 5*, recover HP equivalent to 30% of attack). Requirement:Third Armor X Mug.png Third Armor X",
+    "Effect1": "HP_restore_passive.png Hyper Chip Enhancement I:When you activate Hyper Chip, remove all negative status you currently have(→at 5*, recover HP equivalent to 30% of attack). Requirement:Third Armor X Mug.png Third Armor X",
     "Effect2": "Buster_mastery_passive.png Buster Adaptability II:Reduced damage taken by 6%(→8%) when equipping a buster. Requirement:1 Yellow1 Blue1 Blue",
     "Rank": "S"
   },
@@ -2503,7 +2503,7 @@
     "Attack": "18",
     "HP": "21",
     "Defense": "5",
-    "Effect1": "Generic_passive.png Complete penetration I:Shoulder Boomerang now goes through terrains and obstacles(and enhance the tracking effect at 5 Star). Requirement:Sigma (X4 2nd form) Mug.png Sigma(X4 2nd form)",
+    "Effect1": "Generic_passive.png Complete penetration I:Shoulder Boomerang now goes through terrains and obstacles(→and enhance the tracking effect at 5 Star). Requirement:Sigma(→X4 2nd form) Mug.png Sigma(→X4 2nd form)",
     "Effect2": "Player_Killer.png Player Killer II:When your target is a player, increase damage you deal by 6%(→8%). Requirements:1 Green1 Red1 Yellow",
     "Rank": "S"
   },
@@ -2515,7 +2515,7 @@
     "Attack": "8",
     "HP": "27",
     "Defense": "4",
-    "Effect1": "Generic_passive.png Enhanced Sync I:The Sync Rate increases at a rate of 20% over time.(at 5*, Sync Rate is 100% when entering combat) When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Megamanexe mug.png MegaMan.EXE",
+    "Effect1": "Generic_passive.png Enhanced Sync I:The Sync Rate increases at a rate of 20% over time.(→at 5*, Sync Rate is 100% when entering combat) When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Megamanexe mug.png MegaMan.EXE",
     "Effect2": "Boss Resistance.png Boss Sentinel I:When you are attacked by a boss character, reduce the damage you take by 4%(→6%) Requirement:1 Blue1 Yellow1 Green",
     "Rank": "A"
   },
@@ -2588,7 +2588,7 @@
     "HP": "32",
     "Defense": "7",
     "Effect1": "High_health_attack_increase_passive.png Homeopathy Amplification II:At 50% or more HP, increase damage by 4%(→5%). Requirement:1 Yellow1 Yellow",
-    "Effect2": "Immunity shield.png Operation Cool Down I:Get a preventive shield when entering the level to protect you from all negative status(time is extended at 5 stars.) It can only be triggered once in a battle when you equip more than 1 copy of a card, only the card in the right most slot will be activated. Duration: 30 seconds(→45 seconds) Requirement:1 Yellow1 Yellow1 Green",
+    "Effect2": "Immunity shield.png Operation Cool Down I:Get a preventive shield when entering the level to protect you from all negative status(→time is extended at 5 stars.) It can only be triggered once in a battle when you equip more than 1 copy of a card, only the card in the right most slot will be activated. Duration: 30 seconds(→rank 5: 45 seconds) Requirement:1 Yellow1 Yellow1 Green",
     "Rank": "S"
   },
   {
@@ -2707,7 +2707,7 @@
     "Attack": "12",
     "HP": "29",
     "Defense": "6",
-    "Effect1": "Speed_buff.png Falcon Boost I:Become accelerated after using Giga Attack, increasing movement speed by 40.43%.(Extend the duration of invulnerability by 1 second at 5*) When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Falcon Armor X Mug.png Falcon Armor X",
+    "Effect1": "Speed_buff.png Falcon Boost I:Become accelerated after using Giga Attack, increasing movement speed by 40.43%.(→Extend the duration of invulnerability by 1 second at 5*) When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Falcon Armor X Mug.png Falcon Armor X",
     "Effect2": "Buster_mastery_passive.png Buster Amplification II:Increase damage by 6%(→8%) when equipping a buster. Requirement:1 Blue1 Blue1 Yellow",
     "Rank": "S"
   },
@@ -2719,8 +2719,8 @@
     "Attack": "15",
     "HP": "35",
     "Defense": "5",
-    "Effect1": "Buster mastery passive.png Double Amplification(BS)II:When you equip a buster and melee weapon at the same time, increase damage by 8%(→10%) Requirement:1 Blue1 Red",
-    "Effect2": "Buster mastery passive.png Double Adaptability(BS)II:When you equip a buster and melee weapon at the same time, reduce damage taken by 8%(→10%) Requirement:1 Blue1 Blue1 Red",
+    "Effect1": "Buster mastery passive.png Double Amplification(→BS)II:When you equip a buster and melee weapon at the same time, increase damage by 8%(→10%) Requirement:1 Blue1 Red",
+    "Effect2": "Buster mastery passive.png Double Adaptability(→BS)II:When you equip a buster and melee weapon at the same time, reduce damage taken by 8%(→10%) Requirement:1 Blue1 Blue1 Red",
     "Rank": "S"
   },
   {
@@ -3164,7 +3164,7 @@
     "HP": "28",
     "Defense": "7",
     "Effect1": "Melee_mastery_passive.png Melee Amplification II:Increase damage by 6%(→8%) when equipping a melee weapon. Requirement:1 Blue1 Yellow",
-    "Effect2": "HP restore passive.png Navigation Support I:When your HP drops below 30%, recover 25%(→35%) HP. This skill will only be activated once per stage. Requirement:1 Blue1 Yellow1 Red",
+    "Effect2": "HP restore passive.png Navigation Support I:When your HP drops below 30%, recover 25% HP. This skill will only be activated once per stage. Requirement:1 Blue1 Yellow1 Red",
     "Rank": "S"
   },
   {
@@ -3319,7 +3319,7 @@
     "Attack": "13",
     "HP": "28",
     "Defense": "7",
-    "Effect1": "Buster mastery passive.png Double Adaptability(BM)II:When you equip a buster and machine gun at the same time, reduce damage taken by 8%(→10%) Requirement:1 Yellow1 Green",
+    "Effect1": "Buster mastery passive.png Double Adaptability(→BM)II:When you equip a buster and machine gun at the same time, reduce damage taken by 8%(→10%) Requirement:1 Yellow1 Green",
     "Effect2": "Interference.png Interference Special Attack II:When you hit a target in interference status, increase the damage you deal by 8%(→10%) Requirement:1 Yellow1 Green1 Green",
     "Rank": "S"
   },
@@ -3355,7 +3355,7 @@
     "Attack": "16",
     "HP": "29",
     "Defense": "7",
-    "Effect1": "Buster mastery passive.png Double Amplification(BB)II:When you equip two busters at the same time, increase damage by 8%(→10%) Requirement:1 Green1 Red",
+    "Effect1": "Buster mastery passive.png Double Amplification(→BB)II:When you equip two busters at the same time, increase damage by 8%(→10%) Requirement:1 Green1 Red",
     "Effect2": "Fodder Killer.png Fodder Killer II:When your target is a fodder, increase damage you deal by 6%(→8%). Requirement:1 Green1 Red1 Yellow",
     "Rank": "S"
   },
@@ -3367,8 +3367,8 @@
     "Attack": "11",
     "HP": "23",
     "Defense": "8",
-    "Effect1": "Generic passive.png Nova Strike I:Increase damage by 30% when hitting a target that has been slowed with Nova Strike.(at 5*, increase damage by 50% against targets slowed by Superconductor) When you equip more than 1 copy of a card, only the card with higher star rank will be activated. Requirement:Ultimate armor X mug.png Ultimate Armor X",
-    "Effect2": "Buster_mastery_passive.png Double Adaptability(BB)II:When you equip two busters at the same time, reduce damage taken by 8%(→10%) Requirement:1 Blue1 Blue1 Green",
+    "Effect1": "Generic passive.png Nova Strike I:Increase damage by 30% when hitting a target that has been slowed with Nova Strike.(→at 5*, increase damage by 50% against targets slowed by Superconductor) When you equip more than 1 copy of a card, only the card with higher star rank will be activated. Requirement:Ultimate armor X mug.png Ultimate Armor X",
+    "Effect2": "Buster_mastery_passive.png Double Adaptability(→BB)II:When you equip two busters at the same time, reduce damage taken by 8%(→10%) Requirement:1 Blue1 Blue1 Green",
     "Rank": "S"
   },
   {
@@ -3420,30 +3420,6 @@
     "Rank": "A"
   },
   {
-    "ID": "286",
-    "CardImage": "Card286.png",
-    "Name": "Overdrive Ostrich",
-    "Colour": "Yellow",
-    "Attack": "11",
-    "HP": "20",
-    "Defense": "6",
-    "Effect1": "Summoned_resistance.png Summon Sentinal I:When you are attacked by a summon enemy, reduce the damage you take by 15% (→20%) Requirement:1 Yellow1 Blue",
-    "Effect2": "Skill Seal Resistance.png No Skill Resistatnce II:30% (→40%) chance to become immune to the effects of No Skill Requirement:1 Yellow1 Blue1 Red",
-    "Rank": "A"
-  },
-  {
-    "ID": "287",
-    "CardImage": "Card287.png",
-    "Name": "Storm Owl",
-    "Colour": "Green",
-    "Attack": "8",
-    "HP": "18",
-    "Defense": "8",
-    "Effect1": "Attack_weaken_debuff.png Damage Reduction Special Attack I:When you hit a target in Damage Reduction status, increase the damage you deal by 4% (→6%) Requirement:1 Green1 Red",
-    "Effect2": "Immunity_shield.png Preventive Shield Special Attack II:When you hit a target in Preventive Shield status, increase damage you deal by 8% (→10%) Requirement:1 Green1 Red1 Yellow",
-    "Rank": "A"
-  },
-  {
     "ID": "288",
     "CardImage": "Card288.png",
     "Name": "Return to Origins",
@@ -3460,11 +3436,11 @@
     "CardImage": "Card289.png",
     "Name": "The Mystery of Dr. Wily",
     "Colour": "Blue",
-    "Attack": "20",
-    "HP": "21",
-    "Defense": "5",
-    "Effect1": "Short Range Boost.png Short Range Adaptability II:Reduce the damage taken by 6%(→8%) when hit by a short range attack. Requirement:1 Blue1 Blue1 Blue",
-    "Effect2": "Immunity shield.png Preventive Shield Special Attack II:When you hit a target in Preventive Shield status, increase the damage you deal by 8%(→10%) Requirement:1 Blue1 Blue1 Blue",
+    "Attack": "???",
+    "HP": "???",
+    "Defense": "???",
+    "Effect1": "???",
+    "Effect2": "???",
     "Rank": "S"
   },
   {
@@ -3472,11 +3448,11 @@
     "CardImage": "Card290.png",
     "Name": "The End of Dr. Wily",
     "Colour": "Red",
-    "Attack": "10",
-    "HP": "21",
-    "Defense": "10",
-    "Effect1": "Fodder Killer.png Fodder Killer II:When your target is a fodder, increase damage you deal by 6%(→8%). Requirement:1 Red1 Red",
-    "Effect2": "High_health_attack_increase_passive.png Thorough Preparation Amplification II:At 75% or more HP, increase damage by 5%(→6%). Requirement:1 Red1 Red1 Red",
+    "Attack": "???",
+    "HP": "???",
+    "Defense": "???",
+    "Effect1": "???",
+    "Effect2": "???",
     "Rank": "S"
   },
   {
@@ -3484,11 +3460,11 @@
     "CardImage": "Card291.png",
     "Name": "Newfound Ambitions",
     "Colour": "Green",
-    "Attack": "10",
-    "HP": "41",
-    "Defense": "5",
-    "Effect1": "Long Range Boost.png Long Range Boost II:Increase damage you deal by 6%(→8%) when hitting a target in long range Requirement:1 Green1 Green",
-    "Effect2": "Launcher_mastery_passive.png Launcher Adaptability II:Reduced damage taken by 6%(→8%) when equipping a launcher. Requirement:1 Green1 Green1 Green",
+    "Attack": "???",
+    "HP": "???",
+    "Defense": "???",
+    "Effect1": "???",
+    "Effect2": "???",
     "Rank": "S"
   },
   {
@@ -3508,11 +3484,11 @@
     "CardImage": "Card293.png",
     "Name": "Spark Mandrill",
     "Colour": "Yellow",
-    "Attack": "6",
-    "HP": "27",
-    "Defense": "6",
-    "Effect1": "Slow_debuff.png Slow Special Attack I:When you hit a target in slow status, increase the damage you deal by 4%(→6%). Requirement:1 Yellow1 Blue",
-    "Effect2": "Damage Reduction Resistance.png Damage Reduction Resistance II:30%(→40%) chance to become immune to effects of Damage Reduction. Requirement:1 Yellow1 Blue1 Green",
+    "Attack": "???",
+    "HP": "???",
+    "Defense": "???",
+    "Effect1": "???",
+    "Effect2": "???",
     "Rank": "A"
   },
   {
@@ -3584,7 +3560,7 @@
     "HP": "25",
     "Defense": "7",
     "Effect1": "Short Range Boost.png Zero Distance Boost II:Increase damage you deal by 8%(→10%) when hitting a target in close proximity Requirement:1 Blue1 Blue",
-    "Effect2": "Melee mastery passive.png Double Adaptability(SS)II:When you equip two melee weapons at the same time, reduce damage taken by 8%(→10%) Requirement:1 Blue1 Blue1 Yellow",
+    "Effect2": "Melee mastery passive.png Double Adaptability(→SS)II:When you equip two melee weapons at the same time, reduce damage taken by 8%(→10%) Requirement:1 Blue1 Blue1 Yellow",
     "Rank": "S"
   },
   {
@@ -3716,7 +3692,7 @@
     "HP": "35",
     "Defense": "6",
     "Effect1": "Fodder Sentinel.png Fodder Sentinel II:When you are attacked by a fodder, reduce damage you take by 6%(→8%) Requirement:1 Yellow1 Red",
-    "Effect2": "Invincibility buff.png iCOs Thoughts I:When your HP drops below 30%, gain invulnerability status, preventing you from taking any damage(extend duration at 5 stars). This skill will only be activated once per stage. When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:1 Yellow1 Red1 Red",
+    "Effect2": "Invincibility buff.png iCOs Thoughts I:When your HP drops below 30%, gain invulnerability status, preventing you from taking any damage(→extend duration at 5 stars). This skill will only be activated once per stage. When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:1 Yellow1 Red1 Red",
     "Rank": "S"
   },
   {
@@ -3728,7 +3704,7 @@
     "HP": "28",
     "Defense": "6",
     "Effect1": "Buster_mastery_passive.png Weapon Maestro I:Increases the effect of Weapon Mastery by 20%(→30%). When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:Dynamo Mug.png Dynamo",
-    "Effect2": "Short Range Boost.png Short Range Boost II:Increases damage you deal by 6%(→8%) when hitting a target in short range. Requirement:1 Blue1 Green1 Green",
+    "Effect2": "Short Range Boost.png Short Range Boost II: Increases damage you deal by 6%(→8%) when hitting a target in short range. Requirement:1 Blue1 Green1 Green",
     "Rank": "S"
   },
   {
@@ -3753,258 +3729,6 @@
     "Defense": "5",
     "Effect1": "Fodder Killer.png Fodder Killer II:When your target is a fodder, increase damage you deal by 6%(→8%). Requirement:1 Yellow1 Yellow",
     "Effect2": "Fodder Sentinel.png Fodder Sentinel II:When you are attacked by a fodder, reduce damage you take by 6%(→8%) Requirement:1 Yellow1 Yellow1 Green",
-    "Rank": "S"
-  },
-  {
-    "ID": "314",
-    "CardImage": "Card314.png",
-    "Name": "Guild Development",
-    "Colour": "Yellow",
-    "Attack": "7",
-    "HP": "25",
-    "Defense": "6",
-    "Effect1": "Buster mastery passive.png Double Amplification (BS) I:When you equip a a buster and melee weapon at the same time, increase damage by 6%(→8%) Requirement:1 Green1 Yellow",
-    "Effect2": "CRIT Reduction Resistance.png CRIT Reduction Resistance I:20%(→30%) chance to become immune to effects of CRIT Reduction Requirement:1 Green1 Yellow1 Green",
-    "Rank": "A"
-  },
-  {
-    "ID": "315",
-    "CardImage": "Card315.png",
-    "Name": "Successfully complete",
-    "Colour": "Blue",
-    "Attack": "13",
-    "HP": "31",
-    "Defense": "8",
-    "Effect1": "Buster mastery passive.png Double Amplication (BS) II:When you equip a a buster and melee weapon at the same time, increase damage by 8%(→10%) Requirement:1 Blue1 Green",
-    "Effect2": "CRIT Reduction Resistance.png CRIT Reduction Resistance II:30%(→40%) chance to become immune to effects of CRIT Reduction Requirement:1 Blue1 Green1 Green",
-    "Rank": "S"
-  },
-  {
-    "ID": "316",
-    "CardImage": "Card316.png",
-    "Name": "Lifesaver",
-    "Colour": "Green",
-    "Attack": "9",
-    "HP": "24",
-    "Defense": "5",
-    "Effect1": "Sprayer mastery passive.png Double Amplification (EM) I:When you equip a a sprayer and machine gun at the same time, increase damage by 6%(→8%) Requirement:1 Green1 Green",
-    "Effect2": "CRID Reduction Resistance.png CRID Reduction Resistance I:20%(→30%) chance to become immune to the effects of CRID Reduction. Requirement:1 Green1 Green1 Blue",
-    "Rank": "A"
-  },
-  {
-    "ID": "317",
-    "CardImage": "Card317.png",
-    "Name": "Elite Strike",
-    "Colour": "Yellow",
-    "Attack": "16",
-    "HP": "32",
-    "Defense": "5",
-    "Effect1": "Sprayer mastery passive.png Double Amplification (EM) II:When you equip a a sprayer and machine gun at the same time, increase damage by 8%(→10%) Requirement:1 Yellow1 Yellow",
-    "Effect2": "CRID Reduction Resistance.png CRID Reduction Resistance I:30%(→40%) chance to become immune to the effects of CRID Reduction. Requirement:1 Yellow1 Yellow1 Green",
-    "Rank": "S"
-  },
-  {
-    "ID": "318",
-    "CardImage": "Card318.png",
-    "Name": "Bitter Struggle",
-    "Colour": "Green",
-    "Attack": "11",
-    "HP": "16",
-    "Defense": "7",
-    "Effect1": "Buster mastery passive.png Double Amplification(BB)I:When you equip two busters at the same time, increase damage by 6%(→8%) Requirement:1 Green1 Blue",
-    "Effect2": "Defocus Resistance.png Defocus Resistance I:20%(→30%) chance to become immune to effects of Defocus, stacks with similar effects. Requirement:1 Green1 Blue1 Blue",
-    "Rank": "A"
-  },
-  {
-    "ID": "319",
-    "CardImage": "Card319.png",
-    "Name": "Stopping a hundred with one",
-    "Colour": "Blue",
-    "Attack": "10",
-    "HP": "35",
-    "Defense": "8",
-    "Effect1": "Buster mastery passive.png Double Amplication (BB) II:When you equip two busters at the same time, increase damage by 8%(→10%) Requirement:1 Blue1 Green",
-    "Effect2": "Defocus Resistance.png Defocus Reduction Resistance II:30%(→40%) chance to become immune to effects of Defocus, stacks with similar effects. Requirement:1 Blue1 Green1 Green",
-    "Rank": "S"
-  },
-  {
-    "ID": "320",
-    "CardImage": "Card320.png",
-    "Name": "Members of the Resistance",
-    "Colour": "Green",
-    "Attack": "12",
-    "HP": "16",
-    "Defense": "6",
-    "Effect1": "Launcher mastery passive.png Double Amplication (ML)I:When you equip a machine gun and launcher at the same time, increase damage by 6%(→8%) Requirement:1 Green1 Red",
-    "Effect2": "Out of Control Resistance.png Out of Control Resistance I:20%(→30%) chance to become immune to the effects of Out of Control; the same type of chance can be stacked. Requirement:1 Green1 Red1 Green",
-    "Rank": "A"
-  },
-  {
-    "ID": "321",
-    "CardImage": "Card321.png",
-    "Name": "Elfs Convergence",
-    "Colour": "Yellow",
-    "Attack": "8",
-    "HP": "33",
-    "Defense": "9",
-    "Effect1": "Launcher mastery passive.png Double Amplication (ML)II:When you equip a machine gun and launcher at the same time, increase damage by 8%(→10%) Requirement:1 Yellow1 Red",
-    "Effect2": "Out of Control Resistance.png Out of Control Resistance II:30%(→40%) chance to become immune to the effects of Out of Control; the same type of chance can be stacked. Requirement:1 Yellow1 Red1 Green",
-    "Rank": "S"
-  },
-  {
-    "ID": "322",
-    "CardImage": "Card322.png",
-    "Name": "Investigate",
-    "Colour": "Green",
-    "Attack": "7",
-    "HP": "32",
-    "Defense": "5",
-    "Effect1": "Sprayer mastery passive.png Double Amplication (EL) I:When you equip a sprayer and launcher at the same time, increase damage by 6%(→8%) Requirement:1 Green1 Green",
-    "Effect2": "Skill Seal Resistance.png No Skill Resistance I:20%(→30%) chance to become immune to the effects of No skills; the same type of chance can be stacked. Requirement:1 Green1 Green1 Green",
-    "Rank": "A"
-  },
-  {
-    "ID": "323",
-    "CardImage": "Card323.png",
-    "Name": "Final Showdown!",
-    "Colour": "Red",
-    "Attack": "18",
-    "HP": "32",
-    "Defense": "4",
-    "Effect1": "Melee mastery passive.png Double Amplication (SS)II:When you equip two melee weapons at the same time, increase damage by 8%(→10%) Requirement:1 Red1 Blue",
-    "Effect2": "Skill Seal Resistance.png No Skill Resistance II:30%(→40%) chance to become immune to the effects of No skills; the same type of chance can be stacked. Requirement:1 Red1 Blue1 Blue",
-    "Rank": "S"
-  },
-  {
-    "ID": "324",
-    "CardImage": "Card324.png",
-    "Name": "ROCKMAN X DiVE",
-    "Colour": "Blue",
-    "Attack": "16",
-    "HP": "31",
-    "Defense": "5",
-    "Effect1": "Defense increase passive.png 2nd Year Anniversary I:Reduced damage taken by 4%(→5%). Requirement:1 Blue1 Red",
-    "Effect2": "Attack increase passive.png Appreciation I:Increase damage by 4%(→5%). Requirement:1 Blue1 Red1 Blue",
-    "Rank": "S"
-  },
-  {
-    "ID": "325",
-    "CardImage": "Card325.png",
-    "Name": "Gaea Armor X",
-    "Colour": "Yellow",
-    "Attack": "10",
-    "HP": "24",
-    "Defense": "9",
-    "Effect1": "Defense increase passive.png Enhanched Armor Protection I:The damage taken reduction effect of Armor Protection is increased by 20%. When you equip more than 1 copy of a card, only the card in the right most slot will be activated.  Requirement:Gaea Armor X Mug.png Gaea Armor X",
-    "Effect2": "Boss Resistance.png Boss Sentinel II:When you are attacked by a boss character, reduce the damage you take by 6%(→8%). Requirement:1 Yellow1 Blue1 Blue",
-    "Rank": "S"
-  },
-  {
-    "ID": "326",
-    "CardImage": "Card326.png",
-    "Name": "Black Zero",
-    "Colour": "Blue",
-    "Attack": "16",
-    "HP": "23",
-    "Defense": "5",
-    "Effect1": "Melee_mastery_passive.png Armed Liberation I:Reduce damage taken by 20% when equipping a melee weapon. When you equip more than 1 copy of this card, only the card in the right most slot will be activated. Requirement:Black Zero Mug.png Black Zero",
-    "Effect2": "Player Resistance.png Player Sentinel II:When you are attacked by a player, reduce the damage you take by 6%(→8%). Requirement:1 Blue1 Red1 Red",
-    "Rank": "S"
-  },
-  {
-    "ID": "327",
-    "CardImage": "Card327.png",
-    "Name": "Proto Mans Trap",
-    "Colour": "Green",
-    "Attack": "15",
-    "HP": "28",
-    "Defense": "6",
-    "Effect1": "Buster mastery passive.png Double Amplification(BS)II:When you equip a buster and melee weapon at the same time, increase damage by 8%(→10%) Requirement:1 Green1 Red",
-    "Effect2": "Buster mastery passive.png Double Adaptability(BS)II:When you equip a buster and melee weapon at the same time, reduce damage taken by 8%(→10%) Requirement:1 Green1 Red1 Yellow",
-    "Rank": "S"
-  },
-  {
-    "ID": "328",
-    "CardImage": "Card328.png",
-    "Name": "The Greatest Battle Ever!",
-    "Colour": "Green",
-    "Attack": "13",
-    "HP": "36",
-    "Defense": "6",
-    "Effect1": "Melee_mastery_passive.png Double Amplification(SS)II:When you equip two melee weapon at the same time, increase damage by 8%(→10%) Requirement:1 Green1 Red",
-    "Effect2": "Melee_mastery_passive.png Double Adaptability(SS)II:When you equip two melee weapon at the same time, reduce damage taken by 8%(→10%) Requirement:1 Green1 Red1 Yellow",
-    "Rank": "S"
-  },
-  {
-    "ID": "329",
-    "CardImage": "Card329.png",
-    "Name": "The Fateful Showdown!",
-    "Colour": "Green",
-    "Attack": "???",
-    "HP": "???",
-    "Defense": "???",
-    "Effect1": "???",
-    "Effect2": "???",
-    "Rank": "S"
-  },
-  {
-    "ID": "330",
-    "CardImage": "Card330.png",
-    "Name": "Metal Heroes",
-    "Colour": "Yellow",
-    "Attack": "???",
-    "HP": "???",
-    "Defense": "???",
-    "Effect1": "???",
-    "Effect2": "???",
-    "Rank": "S"
-  },
-  {
-    "ID": "331",
-    "CardImage": "Card331.png",
-    "Name": "The Ambition Resurges!",
-    "Colour": "Green",
-    "Attack": "???",
-    "HP": "???",
-    "Defense": "???",
-    "Effect1": "???",
-    "Effect2": "???",
-    "Rank": "S"
-  },
-  {
-    "ID": "332",
-    "CardImage": "Card332.png",
-    "Name": "The Threat from Space",
-    "Colour": "Yellow",
-    "Attack": "???",
-    "HP": "???",
-    "Defense": "???",
-    "Effect1": "???",
-    "Effect2": "???",
-    "Rank": "S"
-  },
-  {
-    "ID": "333",
-    "CardImage": "Card333.png",
-    "Name": "Rabbit? Easter eggs!",
-    "Colour": "Green",
-    "Attack": "9",
-    "HP": "37",
-    "Defense": "5",
-    "Effect1": "Confusion Resistance.png Confusion Resistance II:30%(→40%) chance to become immune to the effects of Confusion; the same type of chance can be stacked. Requirement:1 Green1 Blue",
-    "Effect2": "Speed buff.png Easter Egg Delivery I:When HP is <50%, you get an accelerated state, increasing movement speed by 25%(→30%), but can only be activated once per stage. When you equip more than 1 copy of a card, only the card in the right most slot will be activated. Requirement:1 Green1 Blue1 Yellow",
-    "Rank": "S"
-  },
-  {
-    "ID": "334",
-    "CardImage": "Card334.png",
-    "Name": "Command Mission",
-    "Colour": "Blue",
-    "Attack": "17",
-    "HP": "22",
-    "Defense": "6",
-    "Effect1": "Defocus Resistance.png Defocus Resistance II:30%(→40%) chance to become immune to effects of Defocus, stacks with similar effects. Requirement:1 Blue1 Blue",
-    "Effect2": "Boss_Killer.png BOSS Killer II:When your target is a boss, increase damage you deal by 6%(→8%). Requirement:1 Blue1 Blue1 Red",
     "Rank": "S"
   }
 ]

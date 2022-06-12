@@ -31,6 +31,10 @@ function parseWikiaToJSON(input)
 {
     var output = String.raw`${input}`;
     //output = output.replace(/\|frameless\|50x50px]]/g," ");
+    output = output.replace("{{Generic Passive\n|Type=Sentinel\n|Rank=1\n|SpecificType=summon enemy\n|NextRank=1\n|NoColor=1\u00a0\n}}","When you are attacked by a summon enemy, reduce the damage you take by 15% (→20%)");
+    output = output.replace("{{Generic Passive\n|Type=Resistance\n|Rank=2\n|SpecificType=No Skill\n|NextRank=1\n|NoColor=1\u00a0\n}}","30% (→40%) chance to become immune to the effects of No Skill");
+    output = output.replace("{{Generic Passive\n|Type=Debuff Special Attack\n|Rank=1\n|SpecificType=Damage Reduction\n|NextRank=1\n|NoColor=1\u00a0\n}}","When you hit a target in Damage Reduction status, increase the damage you deal by 4% (→6%)");
+    output = output.replace("{{Generic Passive\n|Type=Enhancement Special Attack\n|Rank=2\n|SpecificType=Preventive Shield\n|NextRank=1\n|NoColor=1\u00a0\n}}","When you hit a target in Preventive Shield status, increase damage you deal by 8% (→10%)");
     output = output.replace(/'/g,"");
     output = output.replace(/\|-/g,"");
     output = output.replace(/\|<br>/g,"");
@@ -42,6 +46,7 @@ function parseWikiaToJSON(input)
     //output = output.replace(/\|frameless\|50x50px]]/g,"");
     console.log(output);
     output = output.replace(/\|frameless\|50x50px]]\|/g," ");
+    output = output.replace(/\|fdr. wrameless\|50x50px]]\|/g," ");
     //output = output.replace(/\|frameless\|50x50px]] /g,"");
     output = output.replace(/\|\[\[File:/g,"");
     output = output.replace(/\[\[File:/g," ");
@@ -58,6 +63,8 @@ function parseWikiaToJSON(input)
     output = output.replace(/\*HP:/g,"");
     output = output.replace(/\*DEF:/g,"");
     output = output.replace(/\|Requirement/g," Requirement");
+    
+    output = output.replace(/\|Duration:/g," Duration:");
     //console.log(output);
     //output = output.replace(/\[\[(.*?)\]\]/g,"");
     var split = output.split("|");
